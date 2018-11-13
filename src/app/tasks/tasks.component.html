@@ -1,0 +1,17 @@
+<div class="container">
+  <p></p>
+  <button class="btn btn-info" (click)="onNewTask()">New Task</button>
+  <p></p>
+  <table class="table table-hover">
+    <thead>
+      <th>ID</th>
+      <th>TaskName</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of tasksList">
+          <td>{{task.id}}</td>
+          <td>{{task.taskName}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
